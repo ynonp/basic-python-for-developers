@@ -1,0 +1,9 @@
+## Python Syntax Lab
+
+1. Write a program that reads 10 numbers from the user and prints the largest one
+
+2. Modify the program in (1) so that if one of the values is not a number, an alert is printed to the user and they are requested to type another value
+
+3. Write a program that reads a string from the user and prints how many letters in the string are uppper cased
+
+4. https://adventofcode.com/2018/day/5

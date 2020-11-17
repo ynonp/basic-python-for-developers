@@ -1,0 +1,9 @@
+## Python Intro Lab
+
+1. Write a program that asks the user to type her age in years and translates that age to months
+
+2. Write a program that asks the user to type her age in months, and translates the number to years (print 2 digits after the floating point)
+
+3. Write a program that asks the user to select a number, and prints "BOOM" if the number has the digit 7 or divides by 7 with no remainder
+
+4. Bonus: Add type hints
