@@ -5,6 +5,10 @@ def test_aA():
     assert reduce_polymer("aA") == ""
 
 
+def test_bug():
+    assert reduce_polymer("aAff") == "ff"
+
+
 def test_abBA():
     assert reduce_polymer("abBA") == ""
 

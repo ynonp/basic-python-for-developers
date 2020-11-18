@@ -9,7 +9,7 @@ def reduce_polymer(polymer):
     while i < len(polymer) - 1:
         if reducts_with(polymer[i], polymer[i+1]):
             polymer = polymer[0:i] + polymer[i+2:]
-            i -= 1
+            i = max(0, i - 1)
             continue
 
         i += 1
@@ -21,7 +21,8 @@ def reducts_with(unit1, unit2):
     return abs(ord(unit1) - ord(unit2)) == 32
 
 
-
+if __name__ == "__main__":
+    print(len(reduce_polymer(polymer)))
 
 
 
