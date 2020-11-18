@@ -1,6 +1,6 @@
 print("Hello World")
 
-x: int = input("Please type in a number: ")
+x: int = int(input("Please type in a number: "))
 y: int = x + 5
 
 # f -> string interpolation
