@@ -20,7 +20,7 @@ Python Syntax (3 Hours)
 Python Data Structures (2 Hours)
 	Tuples
 	Sets
-	Arrays
+	Arrays / Lists
 	Dictionaries (defaultdict, Counter)
 	List Comprehension
 	Dictionary Comprehension

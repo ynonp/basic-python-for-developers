@@ -1,0 +1,41 @@
+# Functions Lab
+
+1. Create a function that accepts two numbers and returns their sum (use type hints)
+
+2. Create a function that accepts value and a list of numbers, and returns a list of all the numbers higher than the received value (use type hints)
+
+3. Use python's sorted() function to print the following list sorted by student's name:
+
+```
+from collections import namedtuple
+
+Student = namedtuple('Student', ['name', 'grade'])
+
+data = [
+  Student('john', 80),
+  Student('bill', 70),
+  Student('anna', 95),
+  Student('brandon', 90),
+  Student('zoe', 89),
+  Student('tim', 9)
+]
+```
+
+4. Now sort that same list by grades (from high to low)
+
+5. The following code creates a list of 4 functions, but they all print the same value:
+
+```
+my_functions = []
+
+for i in range(4):
+  my_functions.append(lambda: print(f"I am function {i}"))
+
+# This all prints the same text
+  my_functions[0]()
+  my_functions[1]()
+  my_functions[2]()
+  my_functions[3]()
+```
+
+Modify the code so each function will print its own index.

@@ -7,9 +7,10 @@ polymer = "lDdhGghHHLAXxaKkFfDdsSKkeyYEwWDdlBbLIisGcCvOVQqvoVgGPAWwapgIiDJeiIOoE
 def reduce_polymer(polymer):
     i = 0
     while i < len(polymer) - 1:
-        if reducts_with(polymer[i], polymer[i+1]):
-            polymer = polymer[0:i] + polymer[i+2:]
-            i = max(0, i - 1)
+        if has_reduction(polymer, i):
+            polymer = remove_reduction(polymer, i)
+            # i = max(0, i - 1)
+            i -= 1
             continue
 
         i += 1
@@ -17,12 +18,23 @@ def reduce_polymer(polymer):
     return polymer
 
 
-def reducts_with(unit1, unit2):
+def has_reduction(polymer, i):
+    if not 0 <= i < len(polymer) - 1:
+        raise ValueError(f"Index should be >= 0, got {i}")
+    unit1 = polymer[i]
+    unit2 = polymer[i + 1]
     return abs(ord(unit1) - ord(unit2)) == 32
 
 
+def remove_reduction(polymer, i):
+    if not 0 <= i < len(polymer) - 1:
+        raise ValueError(f"Index should be >= 0, got {i}")
+    return polymer[0:i] + polymer[i+2:]
+
+
 if __name__ == "__main__":
-    print(len(reduce_polymer(polymer)))
+#    print(len(reduce_polymer(polymer)))
+    print(len(reduce_polymer("aAaAffaA")))
 
 
 

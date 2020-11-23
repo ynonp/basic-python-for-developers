@@ -1,0 +1,35 @@
+# Data Structures Lab
+
+1. Given a text file with rows in the following format:
+
+```
+A 1
+B 2
+A 2
+C 3
+B 2
+D 4
+C 1
+```
+
+Create a new text file where only the first character is unique:
+
+```
+A 1
+B 2
+C 3
+D 4
+```
+
+2. Given the following translations file:
+
+```
+boy / garçon
+home / maison
+friend / ami
+world / monde
+```
+
+Create a game in which the computer randomizes a word in either Enligh or French and presents it to the user, then the user needs to respond by typing the translation
+
+3. https://adventofcode.com/2018/day/3
