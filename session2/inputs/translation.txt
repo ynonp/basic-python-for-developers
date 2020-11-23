@@ -1,0 +1,4 @@
+boy / garçon
+home / maison
+friend / ami
+world / monde

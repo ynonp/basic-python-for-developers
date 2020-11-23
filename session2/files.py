@@ -1,7 +1,7 @@
 
 # Read from a text file
-with open('lab3.txt', 'r', encoding='utf8') as fin:
-    for line in fin:
+with open('inputs/input1.txt', 'r', encoding='utf8') as fin:
+    for index, line in enumerate(fin):
         print(line, end='')
 
 
