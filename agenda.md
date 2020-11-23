@@ -34,6 +34,8 @@ Functions (2 Hours)
 
 ## Session 3
 
+List Indexes
+
 Files And The Operating System (2 Hours)
 	Reading and writing text files
 	Running external programs

@@ -10,6 +10,8 @@ odd     = [(n * n) for n in numbers if n % 2 == 1]
 # General rule:
 # [f(x) for x in seq if p(x)]
 
+x, y = [int(t) for t in '10,18'.split(',')]
+
 
 
 def save_line(claims: Dict[Tuple[int,int], List[str]], line: str):
