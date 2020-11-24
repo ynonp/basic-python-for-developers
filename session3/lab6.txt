@@ -1,0 +1,53 @@
+# Object Oriented Lab
+
+## 1
+In a previous exercise we sliced a piece of cloth for the elves to make a suit for Santa:
+https://adventofcode.com/2018/day/3
+
+Modify the code by moving to an object oriented interface. The main method should look like this:
+
+```
+cloth = Cloth()
+
+with open('input.txt') as input_file:
+  for line in input_file:
+    claim = Claim(line)
+    cloth.mark(claim) 
+
+criteria = Criteria(lambda claims: len(claims) > 1)
+
+# Print how many squares are claimed by more than one elf
+print(len(cloth.matching(criteria)))
+
+# Print the ID of the only claim that doesn't overlap
+criteria = Criteria(lambda claims: len(claims) == 1)
+print(cloth.matching(criteria)[0].id)
+```
+
+## 2
+
+Create a class called "BuildTarget" that represents an object file we're building. Each build target has "Dependencies" which are other "BuildTarget" objects. When building a BuildTarget we should first build all of its dependencies.
+
+Let's assume that to build a "BuildTarget" we just need to print its name.
+
+This is a sample code that uses the new class:
+
+```
+main = BuildTarget("main")
+
+common = BuildTarget("common")
+ui = BuildTarget("ui")
+
+gui = BuildTarget("gui")
+cli = BuildTarget("cli")
+
+ui.depends_on(gui, cli)
+gui.depends_on(common)
+main.depends_on(common, ui)
+
+main.build()
+```
+
+The code should print out a list of each BuildTarget as it builds them, and make sure not to build any target multiple times and to build each target before building other targets that require it.
+
+

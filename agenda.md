@@ -34,6 +34,8 @@ Functions (2 Hours)
 
 ## Session 3
 
+References vs Values (mutable / immutable data)
+
 List Indexes
 
 Files And The Operating System (2 Hours)
