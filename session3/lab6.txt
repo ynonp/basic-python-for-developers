@@ -25,6 +25,16 @@ print(s.total())
 Create a class called Car that makes the following code work:
 
 ```
+
+class Car:
+    def __init__(self, color, *, speed):
+        self.color = color
+        self.speed = speed
+
+    def faster_than(self, other):
+        return self.speed > other.speed
+
+
 c1 = Car('yellow', speed=40)
 c2 = Car('red', speed=50)
 
@@ -55,6 +65,7 @@ gui.depends_on(common)
 main.depends_on(common, ui)
 
 main.build()
+# common, cli, gui, ui, main
 ```
 
 The code should print out a list of each BuildTarget as it builds them, and make sure not to build any target multiple times and to build each target before building other targets that require it.

@@ -14,6 +14,7 @@ def bigger_than(treshold: int, values: List[int]):
 print(sum_2_numbers(10, 20))
 print(sum_2_numbers("hello", "world"))
 print(bigger_than(10, [2, 5, 8, 40, 50, 60, 70]))
+print(bigger_than(10, [2, 5, 8, 40, 50, 60, 'a']))
 
 
 
