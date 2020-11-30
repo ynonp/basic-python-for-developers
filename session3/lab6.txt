@@ -1,30 +1,39 @@
 # Object Oriented Lab
 
 ## 1
-In a previous exercise we sliced a piece of cloth for the elves to make a suit for Santa:
-https://adventofcode.com/2018/day/3
 
-Modify the code by moving to an object oriented interface. The main method should look like this:
+Create a class Summer to make the following code work:
 
 ```
-cloth = Cloth()
+t = Summer()
+s = Summer()
 
-with open('input.txt') as input_file:
-  for line in input_file:
-    claim = Claim(line)
-    cloth.mark(claim) 
+t.add(10)
+t.add(20)
+t.add(50)
+s.add(70)
 
-criteria = Criteria(lambda claims: len(claims) > 1)
+# prints: 80
+print(t.total())
 
-# Print how many squares are claimed by more than one elf
-print(len(cloth.matching(criteria)))
-
-# Print the ID of the only claim that doesn't overlap
-criteria = Criteria(lambda claims: len(claims) == 1)
-print(cloth.matching(criteria)[0].id)
+# prints: 70
+print(s.total())
 ```
 
 ## 2
+
+Create a class called Car that makes the following code work:
+
+```
+c1 = Car('yellow', speed=40)
+c2 = Car('red', speed=50)
+
+if c1.faster_than(c2):
+    print("The yellow car is faster")
+```
+
+
+## 3
 
 Create a class called "BuildTarget" that represents an object file we're building. Each build target has "Dependencies" which are other "BuildTarget" objects. When building a BuildTarget we should first build all of its dependencies.
 
@@ -51,3 +60,27 @@ main.build()
 The code should print out a list of each BuildTarget as it builds them, and make sure not to build any target multiple times and to build each target before building other targets that require it.
 
 
+
+## 4
+In a previous exercise we sliced a piece of cloth for the elves to make a suit for Santa:
+https://adventofcode.com/2018/day/3
+
+Modify the code by moving to an object oriented interface. The main method should look like this:
+
+```
+cloth = Cloth()
+
+with open('input.txt') as input_file:
+  for line in input_file:
+    claim = Claim(line)
+    cloth.mark(claim)
+
+criteria = Criteria(lambda claims: len(claims) > 1)
+
+# Print how many squares are claimed by more than one elf
+print(len(cloth.matching(criteria)))
+
+# Print the ID of the only claim that doesn't overlap
+criteria = Criteria(lambda claims: len(claims) == 1)
+print(cloth.matching(criteria)[0].id)
+```
