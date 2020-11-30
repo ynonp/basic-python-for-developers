@@ -1,15 +1,14 @@
-# Text and Binary Files Lab
+# Text Files Lab
 
-In one of the previous labs we created a translation game that asks the user for the translation of a given word. Modify the game so it will save a rating for each word in a file, and when it shows the word will also present its rating.
+In one of the previous labs we created a translation game that asks the user for the translation
+of a given word. Modify the game so it will save a rating for each word in a file,
+and when it shows the word will also present its rating.
 
-For example if a user has already answered 5 times on the translation to the word "world" but only 3 of them were correct we should ask her the next time:
+For example if a user has already answered 5 times on the translation to the word "world"
+but only 3 of them were correct we should ask her the next time:
 
 "Please translate the word "world" (score so far for this word is 3/5): "
 
-1. Save the rating in a text file
 
-2. Save the rating in a JSON file (using the "json" module)
+Save the rating in a text file
 
-3. Save the rating in a binary file
-
-Which was your favorite method?
