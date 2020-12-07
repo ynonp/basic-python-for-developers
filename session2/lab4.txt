@@ -1,6 +1,6 @@
 # Functions Lab
 
-1. Create a function that accepts two numbers and returns their sum (use type hints)
+V 1. Create a function that accepts two numbers and returns their sum (use type hints)
 
 2. Create a function that accepts value and a list of numbers, and returns a list of all the numbers higher than the received value (use type hints)
 

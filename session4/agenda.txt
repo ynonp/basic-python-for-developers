@@ -1,0 +1,19 @@
+   Python Course - Session 4
+   Ynon Perek
+   We start at 10:00
+
+
+Text Processing (2 Hours)
+	Regular Expressions - Theory
+	Regular Expressions in Python
+	Automatic Search & Replace in files
+	Reading and Writing CSV files
+
+Solutions from last time
+
+Python GUI with PyQt (2 Hours)
+	Python GUI program structure
+	Working with Qt Designer
+	Creating functionality with signals and slots
+	Demo: Building a GUI for a python tool
+

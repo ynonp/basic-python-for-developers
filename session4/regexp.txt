@@ -1,0 +1,48 @@
+## Character Class (what are we looking for?)
+
+[0123456789] - single digit
+[0-9]        - single digit
+[a-z]        - single lowercase letter
+[a-zA-Z]     - single lowercase or capital letter
+[0-9a-f]     - single hexadecimal character
+
+.            - single ANY character
+\d           - single digit
+\D           - single non-digit
+[^0-9]       - single non-digit
+
+\w           - [0-9a-zA-Z_]
+\W           - [^\w]
+[?], \?      - single ? character
+
+\s           - space (newline, tab)
+\S           - not space
+
+
+
+## Quantity (how many of it?)
+
+.{4}
+\d{3}
+[a-z]{5}
+
+\d{2,7}
+[A-Z]{0,1}
+[a-f0-9]{4,}
+
+\d?      ===    \d{0,1}
+\d*      ===    \d{0,}
+\d+      ===    \d{1,}
+
+(\d\d)+  ===    any two characters appearing more than once
+
+
+
+
+
+
+
+
+
+
+
