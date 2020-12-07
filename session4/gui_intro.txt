@@ -1,0 +1,19 @@
+Normal python:
+
+1. start
+2. do something
+3. go home
+
+GUI app:
+
+1. start
+    draw stuff on screen
+
+2. connect (Qt) signals to slots
+
+3. Main Loop
+    while True:
+        next_event = wait_for_something_to_happen
+        program.handle(next_event)
+
+
